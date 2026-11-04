@@ -1,0 +1,29 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow,noarchive"><meta name="viewport" content="width=device-width,initial-scale=1"><title>韓国美容 ショート動画 試作</title>
+<style>
+:root{--p:#f3f4ef;--c:#fbfbf8;--i:#1d2523;--m:#55615d;--r:#d7dbd3;--a:#17616b}
+@media (prefers-color-scheme:dark){:root{--p:#141a19;--c:#1b2221;--i:#e7ece9;--m:#a9b5b0;--r:#2f3936;--a:#7cc0c8}}
+*{box-sizing:border-box}body{margin:0;background:var(--p);color:var(--i);font-family:"Hiragino Sans",sans-serif;line-height:1.7;padding:32px max(16px,env(safe-area-inset-left))}
+.w{max-width:1120px;margin:0 auto}h1{font-family:"Hiragino Mincho ProN",serif;font-size:28px;margin:0 0 6px}.l{color:var(--m);font-size:14px;margin:0 0 20px}
+.f{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 24px}.f button{font:inherit;font-size:14px;padding:6px 14px;border:1px solid var(--r);background:var(--c);color:var(--i);cursor:pointer}.f button[aria-pressed=true]{background:var(--a);color:var(--p);border-color:var(--a)}
+.g{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:28px}.k{min-width:0}.k[hidden]{display:none}
+.v{width:100%;aspect-ratio:9/16;border:0;display:block;background:#000}.v.i{aspect-ratio:9/14.5;background:var(--c)}
+.t{font-size:14px;font-weight:700;margin:8px 0 0}.a{font-size:13px;color:var(--m);margin:0}.a a{color:var(--a)}
+</style></head><body><div class="w">
+<h1>韓国美容のショート動画 10本</h1><p class="l">社内確認用の試作です。動画は各SNSの埋め込みで表示しています。このページに動画は保存していません。</p>
+<div class="f" id="f"></div><div class="g" id="g"></div></div>
+<script>
+const D=[
+["YouTube","https://www.youtube.com/embed/uLmyPHbyX5o","2026年韓国ナチュラルメイクはこれ！写真映えする透明感メイク","韓国オンニAちゃん (会社員J)","https://www.youtube.com/shorts/uLmyPHbyX5o","メイク"],
+["YouTube","https://www.youtube.com/embed/MJf3Ip48eNo","【韓国美容】リップ&眉アートメイクしてきた","池田真子 / 整理収納アドバイザーの暮らし","https://www.youtube.com/shorts/MJf3Ip48eNo","美容施術"],
+["YouTube","https://www.youtube.com/embed/eAwi2XeYruU","【韓国美容】明洞にopen！初心者さんにもオススメクリニック","くりママ 韓国旅行","https://www.youtube.com/shorts/eAwi2XeYruU","美容施術"],
+["YouTube","https://www.youtube.com/embed/Ftd0nH_XJto","韓国美容皮膚科の探し方","オラクル美容皮膚科","https://www.youtube.com/shorts/Ftd0nH_XJto","美容施術"],
+["YouTube","https://www.youtube.com/embed/bnWifEwwB8g","韓国アイドルが髪キレイな理由","ぼっちな韓国オタク みちゃん","https://www.youtube.com/shorts/bnWifEwwB8g","ヘアケア"],
+["TikTok","https://www.tiktok.com/player/v1/7429283841375751432","オリーブヤング購入品","@ossy_beautylog","https://www.tiktok.com/@ossy_beautylog/video/7429283841375751432","買い物"],
+["TikTok","https://www.tiktok.com/player/v1/7571658944691604744","オリーブヤング買うべきコスメ","@hikaru_0177","https://www.tiktok.com/@hikaru_0177/video/7571658944691604744","買い物"],
+["TikTok","https://www.tiktok.com/player/v1/7571406993026485520","パック5選","@hyuk.beauty_channel","https://www.tiktok.com/@hyuk.beauty_channel/video/7571406993026485520","スキンケア"],
+["Instagram","https://www.instagram.com/reel/DeZWoybsL8O/embed/","韓国美容のリール","@kankokubiyouinfo","https://www.instagram.com/reel/DeZWoybsL8O/","情報"],
+["Instagram","https://www.instagram.com/reel/DLmlE3AyNNl/embed/","韓国美容のリール","@kankokubiyouinfo","https://www.instagram.com/reel/DLmlE3AyNNl/","情報"]];
+const g=document.getElementById('g'),f=document.getElementById('f');
+g.innerHTML=D.map(d=>`<article class="k" data-m="${d[0]}"><iframe class="v ${d[0]==='Instagram'?'i':''}" src="${d[1]}" title="${d[2]}" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe><p class="t">${d[2]}</p><p class="a">${d[0]} ・ ${d[3]} ・ <a href="${d[4]}" target="_blank" rel="noopener">元の投稿</a></p></article>`).join('');
+['すべて','YouTube','TikTok','Instagram'].forEach((n,i)=>{const b=document.createElement('button');b.textContent=n;b.setAttribute('aria-pressed',i===0);b.onclick=()=>{[...f.children].forEach(x=>x.setAttribute('aria-pressed',x===b));document.querySelectorAll('.k').forEach(k=>k.hidden=i&&k.dataset.m!==n)};f.append(b)});
+</script></body></html>
