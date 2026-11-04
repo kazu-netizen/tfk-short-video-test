@@ -18,15 +18,15 @@ h1{font-size:clamp(30px,7vw,48px);font-weight:900;line-height:1.3;margin:0 0 14p
 .doors a{display:block;background:var(--card);border:1px solid var(--rule);padding:14px;color:var(--ink);text-decoration:none;font-weight:700;line-height:1.5}
 .doors a span{display:block;font-size:13px;font-weight:400;color:var(--sub);margin-top:4px}.doors a:hover{border-color:var(--line)}
 @media (max-width:640px){.doors{grid-template-columns:1fr}}
-.quick{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0 20px;margin:32px 0 0;border-top:2px solid var(--ink);border-bottom:1px solid var(--rule)}
+.quick{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0 20px;margin:12px 0 0;border-top:2px solid var(--ink);border-bottom:1px solid var(--rule)}
 .quick div{padding-block:14px;min-width:0}.quick b{display:block;font-size:24px;font-weight:900;line-height:1.3}.quick span{font-size:13px;color:var(--sub)}
 @media (max-width:640px){.quick{grid-template-columns:repeat(2,minmax(0,1fr))}}
 nav.map{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--rule);z-index:5;overflow-x:auto;white-space:nowrap;padding-block:10px;margin-top:32px}
 nav.map a{display:inline-block;font-size:13.5px;color:var(--ink);text-decoration:none;padding:3px 12px;border:1px solid var(--rule);background:var(--card);margin-right:6px;border-radius:99px}
-.videos{padding-block:44px 8px;scroll-margin-top:56px}.f{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px}.f button{font:inherit;font-size:14px;padding:6px 14px;border:1px solid var(--rule);background:var(--card);color:var(--ink);cursor:pointer}.f button[aria-pressed=true]{background:var(--line);color:var(--bg);border-color:var(--line)}
-.g{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px}.k{flex:0 0 min(72vw,260px);min-width:0;scroll-snap-align:start}.k[hidden]{display:none}
+.g{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px}.k{flex:0 0 min(62vw,230px);min-width:0;scroll-snap-align:start}.k[hidden]{display:none}
 .v{width:100%;aspect-ratio:9/16;border:0;display:block;background:#000}.v.i{aspect-ratio:9/14.5;background:var(--card)}
 .t{font-size:14px;font-weight:700;margin:8px 0 0;line-height:1.6}.a{font-size:13px;color:var(--sub);margin:0}
+.c{font-size:13px;font-weight:700;color:var(--line);margin:6px 0 8px}.vn{font-size:13.5px;color:var(--sub);margin:8px 0}.more{margin-top:14px}
 h2{font-size:clamp(24px,5vw,30px);font-weight:900;line-height:1.4;margin:0 0 6px;text-wrap:balance}
 .sum{color:var(--sub);margin:0 0 14px}
 .st{position:relative;padding:44px 0 8px 40px;scroll-margin-top:56px}
@@ -44,34 +44,31 @@ a{color:var(--line)}.foot{padding-block:44px 72px;font-size:14px;color:var(--sub
 <div class="w">
 <header class="hero">
   <p class="ey">試作版・情報確認日 2026年11月4日</p>
-  <h1>韓国旅行、<br>これ1ページで準備。</h1>
-  <p class="lead">行くか迷っている人も、なんとなく見ている人も、準備を進めている人も。必要な情報を、旅行の順番に並べました。</p>
+  <h1>韓国旅行の準備は、<br>ショート動画で。</h1>
+  <p class="lead">入国、航空券、ホテル、お金、移動まで。旅行の順番に、52本のショート動画を章ごとに並べました。横にスライドして見られます。文字の説明は各章の中に畳んであります。</p>
+  <p class="vn">動画は各投稿者の発信で、このページが中身を確かめたものではありません。古い情報のこともあります。クリニックや施術をおすすめするものでもありません。</p>
   <div class="doors">
     <a href="#decide">行くか迷っている<span>費用、日数、ベストな時期</span></a>
-    <a href="#videos">なんとなく見たい<span>まず動画で雰囲気をつかむ</span></a>
+    <a href="#food">なんとなく見たい<span>食事と買い物の動画から</span></a>
     <a href="#prepare">もう行くと決めた<span>出発前にやることから</span></a>
   </div>
-  <div class="quick">
+</header>
+</div>
+<nav class="map" aria-label="章"><div class="w">
+  <a href="#decide">行くか決める</a><a href="#prepare">入国の準備</a><a href="#flight">航空券</a><a href="#hotel">ホテル</a><a href="#net">通信</a><a href="#money">お金</a><a href="#move">移動</a><a href="#apps">アプリ</a><a href="#food">食事</a><a href="#shop">買うもの</a><a href="#beauty">美容</a><a href="#pack">持ち物</a><a href="#plan">モデル日程</a><a href="#trouble">トラブル</a>
+</div></nav>
+<div class="w">
+<section class="st" data-n="1" id="decide">
+  <h2>行くか決める</h2>
+  <p class="sum">近くて短い日数で行けるのが、韓国のいちばんの強みです。</p>
+  <div class="g" data-c="decide"></div>
+  <details class="more"><summary>文字でくわしく見る</summary><div class="quick">
     <div><b>約2.5時間</b><span>東京からソウルまで</span></div>
     <div><b>5〜12万円</b><span>2泊3日の1人の目安</span></div>
     <div><b>時差なし</b><span>日本と同じ時間</span></div>
     <div><b>約12円</b><span>100ウォンの円換算（11月4日）</span></div>
   </div>
-</header>
-</div>
-<nav class="map" aria-label="章"><div class="w">
-  <a href="#videos">動画</a><a href="#decide">行くか決める</a><a href="#prepare">入国の準備</a><a href="#flight">航空券</a><a href="#hotel">ホテル</a><a href="#net">通信</a><a href="#money">お金</a><a href="#move">移動</a><a href="#apps">アプリ</a><a href="#food">食事</a><a href="#shop">買うもの</a><a href="#beauty">美容</a><a href="#pack">持ち物</a><a href="#plan">モデル日程</a><a href="#trouble">トラブル</a>
-</div></nav>
-<div class="w">
-<section class="videos" id="videos">
-  <h2>まず動画で雰囲気をつかむ</h2>
-  <p class="sum">韓国美容のショート動画を10本集めました。横にスライドして見られます。動画は各投稿者の発信で、このページが内容を確かめたものではなく、クリニックや施術をおすすめするものでもありません。</p>
-  <div class="f" id="f"></div><div class="g" id="g"></div>
-</section>
 
-<section class="st" data-n="1" id="decide">
-  <h2>行くか決める</h2>
-  <p class="sum">近くて短い日数で行けるのが、韓国のいちばんの強みです。</p>
   <p>2025年に韓国を訪れた日本人は365万人で、過去最多でした。食事、カフェ、美容、買い物が1回の旅行でそろいます。東京からは約2時間30分、福岡からは約1時間30分で着きます。</p>
   <h3>1人の費用の目安</h3>
   <div class="tw"><table><tr><th>日数</th><th>目安</th><th>入っているもの</th></tr>
@@ -85,11 +82,15 @@ a{color:var(--line)}.foot{padding-block:44px 72px;font-size:14px;color:var(--sub
   <tr><td>11月</td><td>約8℃</td><td>下旬は冬らしくなります</td></tr>
   <tr><td>12〜2月</td><td>約-2〜1℃</td><td>寒く乾燥します。航空券は安めです</td></tr></table></div>
   <p>年末年始、GW、お盆は航空券が高くなります。韓国の旧正月は2027年2月6日〜9日ごろ、秋夕は2027年9月14日〜16日ごろの見込みで、この時期は鉄道が混み、休む店もあります。</p>
+</details>
 </section>
 
 <section class="st" data-n="2" id="prepare">
   <h2>入国の準備</h2>
   <p class="sum">パスポートと、電子の入国申告書を確認します。</p>
+  <div class="g" data-c="prepare"></div>
+  <p class="vn">手続きは変わることがあります。動画より公式の案内を優先してください。</p>
+  <details class="more"><summary>文字でくわしく見る</summary>
   <ul class="chk">
     <li>パスポートの残りの期間は、入国時に3か月以上あると安心です（旅行会社の案内の目安）。正確な要件は駐日韓国大使館で確認する</li>
     <li>日本のパスポートなら、観光で90日以内はビザが不要</li>
@@ -100,11 +101,14 @@ a{color:var(--line)}.foot{padding-block:44px 72px;font-size:14px;color:var(--sub
   <div class="note"><b>2027年以降に行く人へ。</b>K-ETAの免除が延長されるかは、11月4日時点で発表が確認できていません。出発前に <a href="https://www.k-eta.go.kr/" target="_blank" rel="noopener">K-ETA公式サイト</a> を確認してください。公式と似た代行サイトで高い料金を取られないよう注意してください。</div>
   <h3>持ち込みの注意</h3>
   <p>生の果物は持ち込めません。肉、肉の加工品、乳製品は、輸出国の検疫証明書がなければ持ち込めません。市販の風邪薬などにもコデインなどの規制成分が入っていることがあるので、常備薬は事前に成分を確認してください。</p>
+</details>
 </section>
 
 <section class="st" data-n="3" id="flight">
   <h2>航空券を安く取る</h2>
   <p class="sum">料金だけでなく、荷物代を入れた総額で比べます。</p>
+  <div class="g" data-c="flight"></div>
+  <details class="more"><summary>文字でくわしく見る</summary>
   <p>東京、大阪、名古屋、札幌、福岡など各地から便があります。行き先はソウルのほか、釜山、済州なども選べます。</p>
   <ul>
     <li>総額で比べる。LCCは預け荷物や座席指定が別料金のことが多いです</li>
@@ -114,11 +118,14 @@ a{color:var(--line)}.foot{padding-block:44px 72px;font-size:14px;color:var(--sub
     <li>別々の切符で乗り継ぐと、遅れても次の便の補償がありません</li>
   </ul>
   <p>料金の目安は、ソウル往復の最安で1〜1.5万円台、平均で3〜5万円です（比較サイトの解説より）。時期と荷物で大きく変わります。</p>
+</details>
 </section>
 
 <section class="st" data-n="4" id="hotel">
   <h2>ホテルのエリアを選ぶ</h2>
   <p class="sum">初めてなら明洞が無難です。やりたいことでエリアを変えます。</p>
+  <div class="g" data-c="hotel"></div>
+  <details class="more"><summary>文字でくわしく見る</summary>
   <div class="tw"><table><tr><th>エリア</th><th>向いている人</th></tr>
   <tr><td>明洞</td><td>初めての人。日本語が通じる店やホテルが多いです。夜は混みます</td></tr>
   <tr><td>弘大</td><td>カフェや夜の街が好きな人。空港鉄道で仁川空港とつながっています</td></tr>
@@ -126,20 +133,26 @@ a{color:var(--line)}.foot{padding-block:44px 72px;font-size:14px;color:var(--sub
   <tr><td>江南</td><td>美容や買い物が中心の人</td></tr>
   <tr><td>釜山 海雲台</td><td>海沿いのホテルでゆっくりしたい人</td></tr></table></div>
   <p>都心のホテルは1泊8〜15万ウォンが目安です。歯ブラシなどの使い捨てアメニティは置いていないことがあるので、持参すると安心です。安い宿はシャワーのみのことが多いです。</p>
+</details>
 </section>
 
 <section class="st" data-n="5" id="net">
   <h2>スマホをつなぐ</h2>
   <p class="sum">1人ならeSIM、複数人ならレンタルWi-Fiが便利です。</p>
+  <div class="g" data-c="net"></div>
+  <details class="more"><summary>文字でくわしく見る</summary>
   <div class="tw"><table><tr><th>方法</th><th>料金の目安</th><th>特徴</th></tr>
   <tr><td>eSIM</td><td>1週間で数ドル〜20ドル台</td><td>荷物が増えません。対応スマホでSIMロック解除が必要です</td></tr>
   <tr><td>レンタルWi-Fi</td><td>3日間で約3,000〜7,000円</td><td>数人で使えます。受け取りと返却が必要です</td></tr>
   <tr><td>現地のSIM</td><td>空港で購入。5日で約2.5万ウォンの例</td><td>パスポートが必要です</td></tr></table></div>
+</details>
 </section>
 
 <section class="st" data-n="6" id="money">
   <h2>お金を用意する</h2>
   <p class="sum">カード中心で、現金は少しだけ。交通カードは必須です。</p>
+  <div class="g" data-c="money"></div>
+  <details class="more"><summary>文字でくわしく見る</summary>
   <ul>
     <li>両替は市内の公認両替所がお得です。明洞や弘大に多く、パスポートが要ります。空港は不利です</li>
     <li>到着直後の移動用に、5,000〜10,000円分あれば足ります</li>
@@ -149,11 +162,14 @@ a{color:var(--line)}.foot{padding-block:44px 72px;font-size:14px;color:var(--sub
     <li>韓国のNaver PayとKakao Payは、旅行者には使いにくいです</li>
   </ul>
   <p>為替は動きます。2026年11月4日は100ウォンが約11.6〜12円でした。</p>
+</details>
 </section>
 
 <section class="st" data-n="7" id="move">
   <h2>現地で移動する</h2>
   <p class="sum">空港からは空港鉄道、市内は地下鉄がいちばん分かりやすいです。</p>
+  <div class="g" data-c="move"></div>
+  <details class="more"><summary>文字でくわしく見る</summary>
   <div class="tw"><table><tr><th>仁川空港から市内</th><th>料金の目安</th><th>時間</th></tr>
   <tr><td>空港鉄道 一般列車</td><td>4,600〜5,200ウォン</td><td>約1時間</td></tr>
   <tr><td>空港鉄道 直通列車</td><td>13,000ウォン</td><td>約45分</td></tr>
@@ -165,11 +181,14 @@ a{color:var(--line)}.foot{padding-block:44px 72px;font-size:14px;color:var(--sub
     <li>配車アプリのKakao Tは、外国の番号で登録できるという情報があります。設定が難しいという声もあります</li>
     <li>KTXは2026年10月から、出発の2か月前の同じ日の朝7時から予約できます。ソルラルや秋夕は別の日程になることがあります。ソウルから釜山は最短約2時間30分です</li>
   </ul>
+</details>
 </section>
 
 <section class="st" data-n="8" id="apps">
   <h2>入れておくアプリ</h2>
   <p class="sum">韓国では、Google Mapsの道案内が使えない場面があります。</p>
+  <div class="g" data-c="apps"></div>
+  <details class="more"><summary>文字でくわしく見る</summary>
   <div class="tw"><table><tr><th>アプリ</th><th>使う場面</th></tr>
   <tr><td>NAVER Map</td><td>地図と道案内の第一候補です。日本語に対応しています</td></tr>
   <tr><td>Papago</td><td>翻訳です。メニューを写して訳せます</td></tr>
@@ -178,11 +197,14 @@ a{color:var(--line)}.foot{padding-block:44px 72px;font-size:14px;color:var(--sub
   <tr><td>CATCHTABLE Global</td><td>飲食店の予約と順番待ちです</td></tr>
   <tr><td>VISITKOREA</td><td>韓国観光公社の公式アプリです</td></tr></table></div>
   <p>SMS認証が要るアプリもあるので、日本にいるうちに入れておきます。</p>
+</details>
 </section>
 
 <section class="st" data-n="9" id="food">
   <h2>食事を楽しむ</h2>
   <p class="sum">焼肉や鍋は2人前からの店が多いです。1人なら定食や麺が頼みやすいです。</p>
+  <div class="g" data-c="food"></div>
+  <details class="more"><summary>文字でくわしく見る</summary>
   <div class="tw"><table><tr><th>料理</th><th>料金の目安</th></tr>
   <tr><td>キンパ</td><td>1本 約4,000ウォン</td></tr><tr><td>カルグクス</td><td>約10,000ウォン</td></tr><tr><td>ビビンバ</td><td>約11,800ウォン</td></tr><tr><td>冷麺</td><td>約12,600ウォン</td></tr><tr><td>サムギョプサル</td><td>200gで約21,300ウォン</td></tr></table></div>
   <ul>
@@ -191,11 +213,14 @@ a{color:var(--line)}.foot{padding-block:44px 72px;font-size:14px;color:var(--sub
     <li>アレルギーは、韓国語で書いたカードを見せます。ごま油や魚介の出汁は多くの料理に使われています</li>
     <li>流行のスイーツは数か月で入れ替わります。出発前にInstagramで最新を確認します</li>
   </ul>
+</details>
 </section>
 
 <section class="st" data-n="10" id="shop">
   <h2>買うものと税金の戻し方</h2>
   <p class="sum">オリーブヤングとダイソーが定番です。パスポートを持って行きます。</p>
+  <div class="g" data-c="shop"></div>
+  <details class="more"><summary>文字でくわしく見る</summary>
   <ul>
     <li>定番はコスメ、シートマスク、スナック、海苔です</li>
     <li>オリーブヤングは毎月25〜27日ごろにセールがあります</li>
@@ -204,12 +229,15 @@ a{color:var(--line)}.foot{padding-block:44px 72px;font-size:14px;color:var(--sub
     <li>空港の手続きでは、戻る金額が7万5千ウォン以上だと税関で商品の確認が必要です</li>
   </ul>
   <div class="note"><b>日本に持ち帰れないもの。</b>ハム、ソーセージ、ジャーキーなどの肉製品は持ち込めません。肉入りのレトルトやラーメンも原則として持ち込めず、2026年7月から一部だけ対象外になりました。買う前に動物検疫所の基準を確認してください。キムチは液体の扱いなので、100mlを超える容器は預け荷物に入れます。免税の範囲を超える買い物は、<a href="https://www.customs.go.jp/kaigairyoko/menzei.htm" target="_blank" rel="noopener">税関の案内</a>を確認してください。</div>
+</details>
 </section>
 
 <section class="st" data-n="11" id="beauty">
   <h2>美容を受ける前に知ること</h2>
   <p class="sum">どこで何を受けるかは、ご自身で医師に相談して決めてください。</p>
-  <p>このページは、動画も含めて、特定のクリニックや施術をおすすめするものではありません。効果とリスクには個人差があります。</p>
+  <div class="g" data-c="beauty"></div>
+<p class="vn">このページは、動画も含めて、特定のクリニックや施術をおすすめするものではありません。効果とリスクには個人差があります。</p>
+  <details class="more"><summary>文字でくわしく見る</summary>
   <h3>医療ではないもの</h3>
   <p>ヘッドスパは1時間4,000〜8,000円、パーソナルカラー診断は6,000〜12,000円が目安です。</p>
   <h3>肌や顔に行う施術の種類</h3>
@@ -225,14 +253,18 @@ a{color:var(--line)}.foot{padding-block:44px 72px;font-size:14px;color:var(--sub
   </ul>
   <div class="note"><b>税金の還付は終わっています。</b>外国人の美容医療の付加価値税の還付は、2025年12月31日で終わりました。復活の法案は2026年8月に出ましたが、成立は確認できていません。</div>
   <p>急なけがや体調の悪化は119です。美容医療の苦情や相談は、メディカルコリア支援センター（+82-2-1577-7129、日本語対応、毎日9時〜18時）が受けています。医療紛争の調停は韓国医療紛争調停仲裁院が行っていますが、申請書は韓国語が基本で、相手が応じないと始まらないことがあります。帰国後は消費者ホットライン188に相談できます。どの窓口も解決を約束するものではありません。</p>
+</details>
 </section>
 
 <section class="st" data-n="12" id="pack">
   <h2>持ち物</h2>
   <p class="sum">韓国の電圧は220Vです。変換プラグを持って行きます。</p>
+  <div class="g" data-c="pack"></div>
+  <details class="more"><summary>文字でくわしく見る</summary>
   <ul class="chk"><li>パスポート</li><li>スマホ、充電器</li><li>クレジットカード</li><li>変換プラグ（CタイプかSEタイプ）</li><li>モバイルバッテリー</li><li>少額の現金</li><li>歯ブラシなどの洗面用具</li><li>歩きやすい靴</li><li>季節の服（12〜2月はダウン、手袋、マフラー）</li></ul>
   <ul><li>充電器は「100-240V」の表示があれば変換プラグだけで使えます</li><li>日本専用のドライヤーとヘアアイロンは、そのまま使うと壊れます</li></ul>
   <div class="note"><b>モバイルバッテリーは手荷物で2個まで。</b>2026年4月24日から、160Wh以下を2個までです。預け荷物には入れられません。機内では、モバイルバッテリーへの充電も、そこからスマホなどへの充電もしないでください。航空会社ごとの案内も確認してください。</div>
+</details>
 </section>
 
 <section class="st" data-n="13" id="plan">
@@ -266,18 +298,7 @@ a{color:var(--line)}.foot{padding-block:44px 72px;font-size:14px;color:var(--sub
 </footer>
 </div>
 <script>
-const D=[
-["YouTube","https://www.youtube.com/embed/uLmyPHbyX5o","2026年韓国ナチュラルメイクはこれ！写真映えする透明感メイク","韓国オンニAちゃん (会社員J)","https://www.youtube.com/shorts/uLmyPHbyX5o","メイク"],
-["YouTube","https://www.youtube.com/embed/MJf3Ip48eNo","【韓国美容】リップ&眉アートメイクしてきた","池田真子 / 整理収納アドバイザーの暮らし","https://www.youtube.com/shorts/MJf3Ip48eNo","美容施術"],
-["YouTube","https://www.youtube.com/embed/eAwi2XeYruU","【韓国美容】明洞にopen！初心者さんにもオススメクリニック","くりママ 韓国旅行","https://www.youtube.com/shorts/eAwi2XeYruU","美容施術"],
-["YouTube","https://www.youtube.com/embed/Ftd0nH_XJto","韓国美容皮膚科の探し方","オラクル美容皮膚科","https://www.youtube.com/shorts/Ftd0nH_XJto","美容施術"],
-["YouTube","https://www.youtube.com/embed/bnWifEwwB8g","韓国アイドルが髪キレイな理由","ぼっちな韓国オタク みちゃん","https://www.youtube.com/shorts/bnWifEwwB8g","ヘアケア"],
-["TikTok","https://www.tiktok.com/player/v1/7429283841375751432","オリーブヤング購入品","@ossy_beautylog","https://www.tiktok.com/@ossy_beautylog/video/7429283841375751432","買い物"],
-["TikTok","https://www.tiktok.com/player/v1/7571658944691604744","オリーブヤング買うべきコスメ","@hikaru_0177","https://www.tiktok.com/@hikaru_0177/video/7571658944691604744","買い物"],
-["TikTok","https://www.tiktok.com/player/v1/7571406993026485520","パック5選","@hyuk.beauty_channel","https://www.tiktok.com/@hyuk.beauty_channel/video/7571406993026485520","スキンケア"],
-["Instagram","https://www.instagram.com/reel/DeZWoybsL8O/embed/","韓国美容のリール","@kankokubiyouinfo","https://www.instagram.com/reel/DeZWoybsL8O/","情報"],
-["Instagram","https://www.instagram.com/reel/DLmlE3AyNNl/embed/","韓国美容のリール","@kankokubiyouinfo","https://www.instagram.com/reel/DLmlE3AyNNl/","情報"]];
-const g=document.getElementById('g'),f=document.getElementById('f');
-g.innerHTML=D.map(d=>`<article class="k" data-m="${d[0]}"><iframe class="v ${d[0]==='Instagram'?'i':''}" src="${d[1]}" title="${d[2]}" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe><p class="t">${d[2]}</p><p class="a">${d[0]} ・ ${d[3]} ・ <a href="${d[4]}" target="_blank" rel="noopener">元の投稿</a></p></article>`).join('');
-['すべて','YouTube','TikTok','Instagram'].forEach((n,i)=>{const b=document.createElement('button');b.textContent=n;b.setAttribute('aria-pressed',i===0);b.onclick=()=>{[...f.children].forEach(x=>x.setAttribute('aria-pressed',x===b));document.querySelectorAll('.k').forEach(k=>k.hidden=i&&k.dataset.m!==n)};f.append(b)});
+const V={"decide":[["YouTube","nqy2vUE_x7o","渡韓50回超えのPeachスタッフが語る韓国旅行","Peach"],["YouTube","m7XmvOhEk_Y","2025年1月の韓国旅行 航空券とホテル代の節約術","ハングルノート 加藤"]],"prepare":[["YouTube","z3c17IhKdR8","入国手続きの最新情報 E-Arrival・SES・K-ETA","I Korea U 아이코"],["YouTube","VwgCUE381qY","紙の入国カードから電子登録へ","Cak"],["YouTube","w8TKudWNa9k","e-Arrival Card申請を5分で","杉ちゃんネル@そうだ、世界へ行こう。"],["YouTube","oUtqTId21Rs","電子入国申告書 パスポート撮影のコツ","いずみの50代から楽しむ韓国"],["YouTube","hDqfm2gsAMM","電子入国申告書の作成が不要になる条件","いずみの50代から楽しむ韓国"],["YouTube","I1EY1tVFDLo","K-ETA免除でも要注意","こむパはこむぎのパパだから"],["YouTube","Wpo5SU2aMio","K-ETA免除の延長","ハングルノート 加藤"]],"flight":[["YouTube","YP5KkG8xdDw","格安チケットを獲得するコツ","FOCUS公式 | 韓国映像メディア"],["YouTube","FAqq3MbgyUs","渡韓歴30年が教える格安航空券の取り方","I Korea U 아이코"],["YouTube","NKJe9TaozPE","LCCは本当に安い？追加オプションに注意","きゃんトラ / Cam_Travel [旅好き女子]"],["YouTube","WRKQoCdpWTQ","韓国航空券を安くする裏ワザ10選","ノブナガ留学"],["YouTube","fSJnikOx2yY","直前でも安い韓国LCCに乗る","やまだ | 旅するクリエイター"],["YouTube","ROrq179Uf0w","格安航空券の見つけ方 LCC比較","FOCUS公式 | 韓国映像メディア"]],"hotel":[["YouTube","xN8wAC5TgBc","ホテルを選ぶならこの駅 あえて明洞を選ばない編","シュウシュウの大周遊"],["YouTube","efbmO-fjoek","ソウルでホテルを探している人へ","Umi🐬ひとり韓国コスパ旅"],["YouTube","YdSXn4pEHqU","渡韓40回でたどり着いたソウルのホテル7選","旅とごはんとよたび🇰🇷韓国"],["YouTube","GSkpgx7HK8Q","東大門エリアのホテル","FOCUS公式 | 韓国映像メディア"],["YouTube","kNQMFVm0m_k","江南周辺のホテル","Cak"],["YouTube","_Kq8M0WxlSE","江南エリアの好立地ホテル","HIS_エイチ・アイ・エス"]],"net":[["YouTube","roy9BWTRv5o","韓国旅行で使えるeSIMを比較","ハングルノート 加藤"],["YouTube","Hppersk2Y0I","韓国旅行のeSIM紹介","AppChan TV |  海外向け通信の専門チャンネル"],["YouTube","rT6CVF4Nbew","海外eSIMトリファの紹介","FOODOJO (miyu)"]],"money":[["YouTube","4BdmxauaNeY","WOWPASSとT-moneyカードの違い","きむあずまの韓国チャンネル"],["YouTube","U8aYfcPtGaM","WOWPASSは街の両替所より得なのか","韓国、行く前に"],["YouTube","YZy6vIEWipU","WOWPASSカード発行してみた 2026年4月","旅好き　みかん"],["YouTube","50E3VkQ8JeY","WOWPASSの作り方","CHIAKI 치아키 / クズ修行中の韓国トラベルライター"],["YouTube","R4IZz0BeEKk","WOWPASSか両替か","FOCUS公式 | 韓国映像メディア"],["YouTube","5xt5nCsl334","クレジットカードの豆知識","セゾンカード"]],"move":[["YouTube","hLetp1mBKUE","仁川空港からソウル市内へ A'REX","I Korea U 아이코"],["YouTube","vhK6Ewbryag","A'REX・空港バス・タクシーの料金比較 2026年8月時点","ソウル観光メモ帳"],["YouTube","awMYO3SDYAI","仁川空港からタクシーに乗る方法","𝑘𝑖𝑘𝑜 | 키코"],["YouTube","Ut6hn_EKKxI","交通カードはどれが正解？","Sae 旅のリアルメモ"],["YouTube","emH6lEpjnW8","ソウル地下鉄の乗り方","韓国旅行 お得研究所"],["YouTube","e_gcrsJBOUU","地下鉄移動編","朝日新聞出版の実用書"],["YouTube","NRUaaoz75aE","カカオタクシーの使い方まとめ","【韓国情報】どんどんコリア"]],"apps":[["YouTube","oz6j92DvtCw","韓国旅行で使えるアプリ5選","くにさきしまい / KUNISAKI Sisters"]],"food":[["YouTube","k03oFKIX858","韓国旅行で食べたいグルメ5選","にいけい【ここだけの韓国グルメ】"],["YouTube","LnJgIpxz0cI","韓国スタバで注文する方法","韓国 JIN"]],"shop":[["YouTube","_o-XLRM6iDw","金浦空港での免税手続き","旅する作家まつむら"],["TikTok","7429283841375751432","オリーブヤング購入品","@ossy_beautylog"],["TikTok","7571658944691604744","オリーブヤング買うべきコスメ","@hikaru_0177"],["TikTok","7571406993026485520","パック5選","@hyuk.beauty_channel"]],"beauty":[["YouTube","uLmyPHbyX5o","韓国ナチュラルメイク","韓国オンニAちゃん (会社員J)"],["YouTube","bnWifEwwB8g","韓国アイドルの髪","ぼっちな韓国オタク みちゃん"],["YouTube","MJf3Ip48eNo","リップと眉のアートメイク体験","池田真子 / 整理収納アドバイザーの暮らし"],["YouTube","eAwi2XeYruU","明洞の美容クリニック体験","くりママ 韓国旅行"],["YouTube","Ftd0nH_XJto","韓国美容皮膚科の探し方","オラクル美容皮膚科"],["Instagram","DeZWoybsL8O","韓国美容のリール","@kankokubiyouinfo"],["Instagram","DLmlE3AyNNl","韓国美容のリール","@kankokubiyouinfo"]],"pack":[["YouTube","nnboboAS8lg","韓国旅行のマストアイテム5選","まーちトラベル / 50代ゆったり旅  March Travel"]]};
+const U={YouTube:i=>["https://www.youtube.com/embed/"+i,"https://www.youtube.com/shorts/"+i],TikTok:(i,a)=>["https://www.tiktok.com/player/v1/"+i,"https://www.tiktok.com/"+a+"/video/"+i],Instagram:i=>["https://www.instagram.com/reel/"+i+"/embed/","https://www.instagram.com/reel/"+i+"/"]};
+document.querySelectorAll('.g').forEach(g=>{const L=V[g.dataset.c];g.innerHTML=L.map(([m,i,t,a])=>{const[u,o]=U[m](i,a);return `<article class="k"><iframe class="v ${m==='Instagram'?'i':''}" src="${u}" title="${t}" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe><p class="t">${t}</p><p class="a">${m} ・ ${a} ・ <a href="${o}" target="_blank" rel="noopener">元の投稿</a></p></article>`}).join('');const c=document.createElement('p');c.className='c';c.textContent=L.length>1?`動画${L.length}本 ・ 横にスライド`:'動画1本';g.before(c)});
 </script></body></html>
